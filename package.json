@@ -1,0 +1,24 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onsuccess \"node .dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergei-Nikiforov/TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergei-Nikiforov/TS/issues"
+  },
+  "homepage": "https://github.com/Sergei-Nikiforov/TS#readme",
+  "devDependencies": {
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.2.2"
+  }
+}

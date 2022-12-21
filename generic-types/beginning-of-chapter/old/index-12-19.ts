@@ -1,4 +1,4 @@
-import { City, Person, Product, Employee } from "./dataTypes";
+import { City, Person, Product, Employee } from "../src/dataTypes";
 
 let people = [new Person("Bob Smith", "London"), new Person("Dora Peters", "New York")];
 let products = [new Product("Running Shoes", 100), new Product("Hat", 25)];
@@ -16,7 +16,7 @@ class DataCollection<T> {
         return this.items.filter(item => predicate(item)) as V[];
     }
 
-    static reverse<ArrayType>(items: ArrayType[]): ArrayType[] {
+    static reverse(items: any[]) {
         return items.reverse();
     }
 }
@@ -29,8 +29,5 @@ function isProduct(target: Person | Product): target is Product {
 let filteredProducts = mixedData.filter<Product>(isProduct);
 filteredProducts.forEach(p => console.log(`Product: ${ p.name}, ${p.price}`));
 
-let reversedCities = DataCollection.reverse<City>(cities);
+let reversedCities: City[] = DataCollection.reverse(cities);
 reversedCities.forEach(c => console.log(`City: ${c.name}, ${c.population}`));
-
-let peopleCities = DataCollection.reverse<Person>(people);
-peopleCities.forEach(p => console.log(`Person: ${p.name}, ${p.city}`));

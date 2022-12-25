@@ -100,7 +100,7 @@
       // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
       "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
     },
-    "include": ["src", "old/index-12-13.ts", "old/index-12-14.ts", "old/index-12-15.ts", "old/index-12-16.ts", "old/index-12-18.ts", "old/index-12-19.ts"],
+    "include": ["src", "old/index-12-13.ts", "old/index-12-14.ts", "old/index-12-15.ts", "old/index-12-16.ts", "old/index-12-18.ts", "old/index-12-19.ts", "old/index-12-20.ts", "old/index-12-22.ts", "old/index-12-23.ts", "old/index-12-24.ts"],
     "exclude": ["old"],
   }
   

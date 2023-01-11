@@ -100,6 +100,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["src", "old/index-13-1.ts", "old/index-13-3.ts", "old/index-13-4.ts"],
+  "include": ["src", "old/index-13-1.ts", "old/index-13-3.ts", "old/index-13-4.ts", "old/index-13-5.ts", "old/index-13-6.ts", "old/index-13-7.ts", "old/index-13-8.ts"],
   "exclude": ["old"],
 }

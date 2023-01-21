@@ -1,12 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const dataTypes_1 = require("./dataTypes");
-function getValue(item, keyname) {
-    console.log(`Value: ${item[keyname]}`);
-}
-let p = new dataTypes_1.Product("Running Shoes", 100);
-getValue(p, "name");
-getValue(p, "price");
-let e = new dataTypes_1.Employee("Bob Smith", "Sales");
-getValue(e, "name");
-getValue(e, "role");
+let p = { name: 'Kayak', price: 275 };
+console.log(`Mapped type: ${p.name}, ${p.price}`);
+let q = { name: "Kayak", price: "apples" };
+console.log(`Changed type # 1: ${q.name}, ${q.price}`);
+let r = { nameProperty: "Kayak", priceProperty: 12 };
+console.log(`Changed type # 2: ${r.nameProperty}, ${r.priceProperty}`);

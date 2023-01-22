@@ -1,4 +1,4 @@
-import { City, Person, Product, Employee } from "./dataTypes";
+import { City, Person, Product, Employee } from "../src/dataTypes";
 
 type CustomMapped<K extends keyof any, T> = {
     [P in K]: T

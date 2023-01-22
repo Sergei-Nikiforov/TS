@@ -1,6 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let p1 = { name: 'Bob', city: 'London' };
-let p2 = { name: "Alice", city: "Paris" };
-console.log(`Custom mapped type: ${p1.name}, ${p1.city}`);
-console.log(`Built-in mapped type: ${p2.name}, ${p2.city}`);
+const dataTypes_1 = require("./dataTypes");
+class Collection {
+    constructor(...initialItems) {
+        this.items = initialItems || [];
+    }
+    total(propName, format) {
+        let totalValue = this.items.reduce((t, item) => t += Number(item[propName]), 0);
+        return format ? `$${totalValue.toFixed()}` : totalValue;
+    }
+}
+let data = new Collection(new dataTypes_1.Product("Kayak", 275), new dataTypes_1.Product("Lifejacket", 48.95));
+let firstVal = data.total("price", true);
+console.log(`Formatted value: ${firstVal}`);
+let secondVal = data.total("price", false);
+console.log(`Unformatted value: ${secondVal}`);
